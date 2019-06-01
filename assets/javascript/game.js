@@ -84,7 +84,7 @@ function compareGuess(letter) {
         }
     }
 
-    if stringArray.length <= 0) {
+    if (stringArray.length <= 0) {
         guessesLeft--;
     }
     else {
@@ -92,7 +92,7 @@ function compareGuess(letter) {
             secretWord[stringArray[i]] = letter;
         }
     }
-};
+}
 
 // Function to check for a win or a loss based on keys user entered
 
@@ -124,13 +124,13 @@ function letterPress(letter) {
 // Start the game by pressing a key using document.onkeyup
 // toLowerCase changes whatever the user presses into lowercase to match the computer array
 
-document.onkeyup = "function(event)" {
+document.onkeyup = "function(event)"; {
     if (finishedGame) {
         resetGame();
         finishedGame = false;
     }
     else {
-        if event.keyCode >= 65 && event.keyCode <= 90) {
+        if (event.keyCode >= 65 && event.keyCode <= 90) {
             letterPress(event.key.toLowerCase());
             updateGame();
             checkForWin();
